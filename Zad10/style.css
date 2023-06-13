@@ -75,6 +75,13 @@ header,footer{
     padding: 10px;
     text-align: center;
     color: #dad1cc;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    height: 180px;
 }
 footer{
     height: 30px;
@@ -113,7 +120,7 @@ article{
     text-align: center;
 }
 .tabela{
-    height: 431px;
+    height: 363px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +157,7 @@ td,th{
     color: #1b1918;
 }
 .szczegoly{
-    height: 474px;
+    height: 406px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,8 +186,8 @@ td,th{
     display: flex;
     justify-content: center;
 }
-.formularz_dodawanie{
-    height: 436px;
+.formularz_dodawanie,.formularz_logowanie,.formularz_rejestracja{
+    height: 368px;
     display:flex;
     background: linear-gradient(to right top, #ffffffc4,#f7e7de98); 
     padding: 12px;
@@ -189,3 +196,48 @@ td,th{
     margin: 10px;
     border-radius: 15px;
 }
+/*Dodane do lab10*/
+ .powitanie{
+    background: linear-gradient(to top, #f1e4dcc5,#f1e4dcf5); 
+    border-top-right-radius: 300px;
+    border-top-left-radius: 300px;
+    width: 350px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    color: #1a1817;
+ }
+ .powitanie p{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+ }
+ .formularz_logowanie, .formularz_rejestracja{
+    align-items: center;
+    text-align: center;
+ }
+ .formularz_logowanie div,.formularz_rejestracja div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+ .formularz_logowanie div .przyciski,.formularz_rejestracja div .przyciski{
+    padding: 5px;
+    margin: 5px;
+ }
+ .login-input {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 25px;
+    height: 15px;
+    width: 180px;
+    border-radius: 10px;
+   }
+   .login-input:focus {
+    border: #362924cb 2px solid;
+    border-radius: 5px;
+    outline: none; 
+    }

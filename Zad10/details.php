@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DZBANY</title>
+    <link rel="shortcut icon" href="tlo1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php
+        include("session.php");
+        require("db.php");
+    ?>
     <img src="tlo1.png" class="tlo_img">
     <img src="tlo1.png" class="tlo_img2">
     <img src="tlo1.png" class="tlo_img3">
@@ -17,6 +22,7 @@
     <div class="glowny">
     <header>
         <h1>Dzbany</h1>
+        <?php include("powitanie.php");?>
     </header>
     <article>
         <h4 class="dolny_pasek">SZCZEGÓŁY O DZBANIE</h4>

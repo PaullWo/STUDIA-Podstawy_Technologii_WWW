@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Główna</title>
+    <title>DZBANY</title>
+    <link rel="shortcut icon" href="tlo1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php
+        include("session.php");
+        require("db.php");
+    ?>
     <img src="tlo1.png" class="tlo_img">
     <img src="tlo1.png" class="tlo_img2">
     <img src="tlo1.png" class="tlo_img3">
@@ -17,13 +22,14 @@
     <div class="glowny">
     <header>
         <h1>DZBANY</h1>
+        <?php include("powitanie.php");?>
+        </div>
     </header>
     <article>
         <div class="wyszukiwanie">
         <p>Wyszukaj po kategorii:
         <!--Generowanie listy kotwic z kategoriami-->
         <?php
-            $conn = new mysqli("localhost", "root", "", "dzbanyv2dbpw");
             $sql = "SELECT id, nazwa FROM kategorie";
             $result = $conn->query($sql);
             echo "<a href='index.php' class='przyciski'> Wszyskie</a>";

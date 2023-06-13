@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 31 Maj 2023, 23:55
+-- Czas generowania: 13 Cze 2023, 23:40
 -- Wersja serwera: 10.4.13-MariaDB
 -- Wersja PHP: 7.4.8
 
@@ -93,7 +93,33 @@ INSERT INTO `recenzje` (`id`, `idDzbana`, `nick`, `ocena`, `tresc`, `data`) VALU
 (4, 1, 'paulina1', 5, 'Bardzo ładny. Podoba mi się. 10/10', '2023-05-31 15:50:28'),
 (5, 2, 'NiebieskaAntylopa67', 4, 'Może być, ale widziałem lepsze. Pęka po jednym użyciu.', '2023-05-31 15:51:47'),
 (6, 3, 'SnieznaKoala123', 3, 'Dziwny troche ale ogolnie ok.', '2023-05-31 17:53:54'),
-(8, 11, 'Paulina123', 5, '5/5', '2023-05-31 21:40:01');
+(8, 11, 'Paulina123', 5, '5/5', '2023-05-31 21:40:01'),
+(9, 2, '', 1, 'Wpisz recenzję.', '2023-06-13 20:52:33');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `uzytkownicy`
+--
+
+CREATE TABLE `uzytkownicy` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `login` varchar(50) COLLATE utf8_polish_ci NOT NULL,
+  `haslo` varchar(50) COLLATE utf8_polish_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8_polish_ci NOT NULL,
+  `rola` varchar(50) COLLATE utf8_polish_ci NOT NULL DEFAULT 'user',
+  `data` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+
+--
+-- Zrzut danych tabeli `uzytkownicy`
+--
+
+INSERT INTO `uzytkownicy` (`id`, `login`, `haslo`, `email`, `rola`, `data`) VALUES
+(1, 'fsf', '38c55423e123aca445982dfd897a552d', '131das', 'user', '2023-06-13 19:48:00'),
+(2, 'fsf', '38c55423e123aca445982dfd897a552d', '131das', 'user', '2023-06-13 19:48:17'),
+(3, 'paulwo', '202cb962ac59075b964b07152d234b70', '123.com', 'user', '2023-06-13 19:58:36'),
+(4, '123', '202cb962ac59075b964b07152d234b70', '123', 'user', '2023-06-13 20:04:19');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -120,6 +146,12 @@ ALTER TABLE `recenzje`
   ADD KEY `idDzbana` (`idDzbana`);
 
 --
+-- Indeksy dla tabeli `uzytkownicy`
+--
+ALTER TABLE `uzytkownicy`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -139,7 +171,13 @@ ALTER TABLE `kategorie`
 -- AUTO_INCREMENT dla tabeli `recenzje`
 --
 ALTER TABLE `recenzje`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT dla tabeli `uzytkownicy`
+--
+ALTER TABLE `uzytkownicy`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Ograniczenia dla zrzutów tabel
