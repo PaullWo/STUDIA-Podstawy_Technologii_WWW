@@ -131,7 +131,7 @@ article{
     overflow-y: auto;
     overflow-x:hidden;
 }
-.scroll_szczegoly{
+.scroll_szczegoly,.scroll_mojerecenzje{
     height: 100%;
     overflow-y: auto;
     overflow-x:hidden;
@@ -156,7 +156,7 @@ td,th{
     border-radius: 3px;
     color: #1b1918;
 }
-.szczegoly{
+.szczegoly,.mojerecenzje{
     height: 406px;
     display: flex;
     align-items: center;
@@ -240,4 +240,23 @@ td,th{
     border: #362924cb 2px solid;
     border-radius: 5px;
     outline: none; 
+    }
+    .arecenzje{
+        text-decoration: none;
+        color:#362924cc;
+        font-weight: bold;
+
+    }
+    .arecenzje:hover{
+        text-decoration: none;
+        color: #725548cc;
+    }
+    .scroll_mojerecenzje{
+        width: 700px;
+    }
+    .scroll_mojerecenzje div{
+        border: #362924cb 2px solid;
+        border-radius: 5px;
+        box-shadow: #362924cb 1px 1px 1px 3px;
+        margin-bottom: 8px;
     }

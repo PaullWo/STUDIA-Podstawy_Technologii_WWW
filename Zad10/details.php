@@ -80,8 +80,6 @@
             <?php
                 echo "<input type='hidden' name='id_dzbana' value='{$id}'>";
             ?>
-            <label for="nick">Nick:</label>
-            <input type="text" name="nick" id="nick" size="10"><br>
             <label for="ocena">Ocena:</label>
             <select name="ocena" id="ocena">
                 <option value="1">1</option>

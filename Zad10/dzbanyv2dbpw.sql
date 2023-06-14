@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 13 Cze 2023, 23:40
+-- Czas generowania: 14 Cze 2023, 02:07
 -- Wersja serwera: 10.4.13-MariaDB
 -- Wersja PHP: 7.4.8
 
@@ -94,7 +94,9 @@ INSERT INTO `recenzje` (`id`, `idDzbana`, `nick`, `ocena`, `tresc`, `data`) VALU
 (5, 2, 'NiebieskaAntylopa67', 4, 'Może być, ale widziałem lepsze. Pęka po jednym użyciu.', '2023-05-31 15:51:47'),
 (6, 3, 'SnieznaKoala123', 3, 'Dziwny troche ale ogolnie ok.', '2023-05-31 17:53:54'),
 (8, 11, 'Paulina123', 5, '5/5', '2023-05-31 21:40:01'),
-(9, 2, '', 1, 'Wpisz recenzję.', '2023-06-13 20:52:33');
+(10, 1, '123', 5, 'Bardzo ładny!', '2023-06-13 22:05:07'),
+(11, 2, '123', 3, 'Średni wyglad.', '2023-06-13 23:50:23'),
+(12, 3, '123', 1, 'Cham,prostak.', '2023-06-13 23:50:34');
 
 -- --------------------------------------------------------
 
@@ -116,8 +118,6 @@ CREATE TABLE `uzytkownicy` (
 --
 
 INSERT INTO `uzytkownicy` (`id`, `login`, `haslo`, `email`, `rola`, `data`) VALUES
-(1, 'fsf', '38c55423e123aca445982dfd897a552d', '131das', 'user', '2023-06-13 19:48:00'),
-(2, 'fsf', '38c55423e123aca445982dfd897a552d', '131das', 'user', '2023-06-13 19:48:17'),
 (3, 'paulwo', '202cb962ac59075b964b07152d234b70', '123.com', 'user', '2023-06-13 19:58:36'),
 (4, '123', '202cb962ac59075b964b07152d234b70', '123', 'user', '2023-06-13 20:04:19');
 
@@ -171,7 +171,7 @@ ALTER TABLE `kategorie`
 -- AUTO_INCREMENT dla tabeli `recenzje`
 --
 ALTER TABLE `recenzje`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT dla tabeli `uzytkownicy`

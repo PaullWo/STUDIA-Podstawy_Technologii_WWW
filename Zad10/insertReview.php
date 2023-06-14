@@ -8,9 +8,10 @@
 </head>
 <body>
 <?php
+    include("session.php");
+    require("db.php");
     //Dodawanie recenzji
-    $conn = new mysqli("localhost", "root", "", "dzbanyv2dbpw");
-    $sql = "INSERT INTO `recenzje` (`idDzbana`, `nick`, `ocena`, `tresc`) VALUES ('{$_GET["id_dzbana"]}','{$_GET["nick"]}','{$_GET["ocena"]}','{$_GET["recenzja"]}');";
+    $sql = "INSERT INTO `recenzje` (`idDzbana`, `nick`, `ocena`, `tresc`) VALUES ('{$_GET["id_dzbana"]}','{$_SESSION["login"]}','{$_GET["ocena"]}','{$_GET["recenzja"]}');";
     $result = $conn->query($sql);
     $conn->close(); 
     header('Location: '.$_SERVER['HTTP_REFERER']);
