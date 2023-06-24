@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function funkcja(){
+            const x= document.getElementById("x").value;
+            const y= document.getElementById("y").value;
+            const dzialanie=document.getElementById("znak").value;
+            switch(dzialanie){
+                case "+":
+                document.getElementById("wynik").innerHTML=x+dzialanie+y+"="+(parseInt(x)+parseInt(y));
+                break;
+                case "-":
+                document.getElementById("wynik").innerHTML=x+dzialanie+y+"="+(parseInt(x)-parseInt(y));
+                break;
+                case "*":
+                document.getElementById("wynik").innerHTML=x+dzialanie+y+"="+(parseInt(x)*parseInt(y));
+                break;
+                case "/":
+                document.getElementById("wynik").innerHTML=x+dzialanie+y+"="+(parseInt(x)/parseInt(y));
+                break;
+                default:
+                document.getElementById("wynik").innerHTML="Wystąpił błąd!";
+                break;
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Kalkulator</h1>
+    </header>
+    <nav>
+        <a href="pierwsza.html" class="menu">STRONA GŁÓWNA</a>
+        <a href="galeria.html" class="menu">GALERIA</a>
+        <a href="kalkulator.html" class="menu">KALKULATOR</a>
+    </nav>
+    <article>
+        <div id="kalkulator">
+            <label for="x">x=</label>
+            <input type="number" name="x" id="x">
+            <label for="y">y=</label>
+            <input type="number" name="y" id="y"><br>
+            <select name="znak" id="znak">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select><br>
+            <button id="rowna_sie" onclick="funkcja()">=</button><br>
+            <p id="wynik">--</p>
+        </div>
+    </article>
+    <footer>
+        <p>Wykonała Paulina Woźnica</p>
+    </footer>
+</body>
+</html>

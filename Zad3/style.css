@@ -1,0 +1,139 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    font-family: Georgia,serif;
+}
+header{
+    color: #123627;
+    font-size: 30px;
+    font-family: system-ui;
+    text-shadow: #ffffff 2px 1px 1px;
+    height: 150px;
+    background: radial-gradient(closest-side, #e9e9e9de, #cd95a3, #194d38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    height: 40px;
+    background-color: #153e2e;
+    justify-content: space-evenly;
+}
+.menu{
+    color: white;
+    text-shadow: black 3px 2px 3px;
+    text-decoration: none;
+    background: radial-gradient(#e9e9e929, #1236278c);
+    padding: 10px;
+}
+.menu:hover{
+    background: radial-gradient(#cd95a3bf, #123627);
+}
+article{
+    background-color: #9ca9a4;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.przyklady{
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    padding: 2px;
+    align-items: center;
+    background-color: #ffffff8a;
+    border-radius: 15px;
+    border: 2px solid #e9e9e9de;
+    height: 420px;
+    width: 600px;
+    color: #0e2b1f;
+    box-shadow: #ccafb6 4px 3px 3px;
+    justify-content: space-between;
+}
+.przyklady img{
+    width: 400px;
+}
+h4{
+    text-shadow: white 2px 1px 1px;
+    font-family: system-ui;
+}
+.przyklad1{
+    font-weight: bolder;
+    font-size: 40px;
+}
+button{
+    color: white;
+    text-shadow: black 2px 1px 1px;
+    text-decoration: none;
+    background: radial-gradient(#e9e9e929, #0e2b1f);
+    margin: 5px;
+    width: 150px;
+}
+#galeria{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#all_galeria{
+    background-color: #ffffff8a;
+    margin: 0px;
+    padding: 10px 0px;
+    border-radius: 15px;
+}
+.male{
+    height: 100px;
+    border: 2px solid #e9e9e9de;
+    box-shadow: #ccafb6 4px 3px 3px;
+}
+#male_galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#duzy{
+    margin: 10px;
+    border: 5px solid #e9e9e9de;
+    box-shadow: #ccafb6 5px 4px 4px;
+    width: 600px;
+}
+#kalkulator{
+    height: 300px;
+    width: 200px;
+    background-color: #ffffff8a;
+    padding: 10px 0px;
+    border-radius: 15px;
+    border: 5px solid #e9e9e9de;
+    box-shadow: #ccafb6 5px 4px 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#kalkulator input{
+    width: 40px;
+}
+#kalkulator button{
+    width: 30px;
+}
+#kalkulator label{
+    color: #0e2b1f;
+    font-weight: 900;
+}
+footer{
+    display: flex;
+    height: 40px;
+    background-color: #153e2e;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: black 3px 2px 3px;
+}

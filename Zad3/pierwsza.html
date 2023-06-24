@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript przykłady</h1>
+    </header>
+    <nav>
+        <a href="pierwsza.html" class="menu">STRONA GŁÓWNA</a>
+        <a href="galeria.html" class="menu">GALERIA</a>
+        <a href="kalkulator.html" class="menu">KALKULATOR</a>
+    </nav>
+    <article>
+        <div class="przyklady">
+            <h4>ZMIANA ZAWARTOŚCI ELEMENTÓW HTML</h2>
+            <div class="przyklad1">
+                <p id="test1"> /﹋\<br>
+                    (҂`_´)<br>
+                    <,︻╦╤─ ҉ - -<br>
+                    /﹋\<br></p>
+            </div>
+            <button type="button" onclick='document.getElementById("test1").innerHTML="(҂`_´)-<-< *nie żyje*"'>ZABIJ WROGA</button>
+        </div>
+        <div class="przyklady">
+            <h4>ZMIANA WARTOŚCI ATRYBUTÓW</h2>
+            <img src="pies1.png" id="pies">
+            <button type="button" onclick='document.getElementById("pies").src="pies2.png"'>NAKARM PSA</button>
+        </div>
+        <div class="przyklady">
+            <h4>ZMIANA STYLÓW</h2>
+            <p id="przyklad3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <button type="button" onclick='document.getElementById("przyklad3").style.fontSize="20px"'>POWIĘKSZ</button>
+        </div>
+        <div class="przyklady">
+            <h4>POKAZYWANIE I UKRYWANIE ELEMENTÓW</h2>
+                <div id="przyklad4">
+                    <p> /﹋\           /﹋\<br>
+                        (҂`_´)           (҂`_´)<br>
+                        <,︻╦╤─ ҉ - -           <,︻╦╤─ ҉ - -<br>
+                        /﹋\           /﹋\<br></p>
+                        <p> /﹋\           /﹋\<br>
+                            (҂`_´)           (҂`_´)<br>
+                            <,︻╦╤─ ҉ - -           <,︻╦╤─ ҉ - -<br>
+                            /﹋\           /﹋\<br></p>
+                            <p> /﹋\           /﹋\<br>
+                                (҂`_´)           (҂`_´)<br>
+                                <,︻╦╤─ ҉ - -           <,︻╦╤─ ҉ - -<br>
+                                /﹋\           /﹋\<br></p>
+                </div>
+            <button type="button" onclick="document.getElementById('przyklad4').style.display='none'">UNICESTW WROGÓW</button>
+            
+        </div>
+    </article>
+    <footer>
+        <p>Wykonała Paulina Woźnica</p>
+    </footer>
+</body>
+</html>

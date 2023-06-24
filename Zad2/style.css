@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia';
+  }
+  
+/* Naglowek */
+  header {
+    background-image: url('tlo1.png');
+    background-size: cover;
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+    color: #d6f8eb;
+    height: 200px;
+  }
+  
+
+/* Menu */
+  nav {
+    float: left;
+    width: 10%;
+    height: 600px; 
+    background: #59b691;
+  }
+  nav table{
+    width: 100%;
+    height: 100%;
+    
+  }
+  nav td,th,tr{
+    border: 5px solid #418b6f;
+    text-align: center;
+    font-size: 20px;
+  }
+  nav td{
+    font-size: 15px;
+    padding: 0px;
+    font-weight:900;
+    background: linear-gradient(#316954, #69caa5);
+  }
+  nav td:hover{
+    background: linear-gradient(#316954, #bce4d4);
+  }
+  nav a{
+    text-decoration: none;
+    color: #132921;
+    text-shadow: white 0.1em 0.1em 0.2em;
+  }
+/* Czesc z artykulem */
+  article {
+    float: left;
+    padding: 20px;
+    padding-left: 50px ;
+    padding-right: 50px ;
+    width: 90%;
+    background: linear-gradient(#92d3b9, #caf7e5);
+    height: 600px;
+    font-size: 18px;
+    color: #132921;
+  }
+  article h1{
+    text-align: center;
+    text-shadow: white 0.1em 0.1em 0.2em;
+  }
+  
+  article img{
+    display: block; 
+    margin: 0 auto;
+    height: 300px;
+    box-shadow: white 0.3em 0.3em 0.3em 0.5em;
+  }
+  .obsada{
+    height: 110px;
+    box-shadow: none;
+  }
+  .galeria{
+    width: 400px;
+    display: flex;
+    float: left;
+    margin-left: 80px;
+    margin-top: 50px;
+  }
+  .recenzje{
+    height: 350px;
+    box-shadow: none;
+    display: flex;
+    float: left;
+    margin-left: 40px;
+  }
+  .rekomendacje{
+    display: flex;
+    float: left;
+    height: 450px;
+    margin: 20px;
+    margin-left: 50px;
+  }
+  article p{
+    margin-top: 30px;
+  }
+  article table{
+    width: 100%;
+    height: 80%;
+    box-shadow: white 0.2em 0.2em 0.2em 0.3em;
+  }
+  article tr,td,th,table{
+    border: 2px solid #418b6f;
+    text-align: center;
+    font-size: 18px;
+    margin:0px;
+    padding: 0px;
+  }
+  iframe{
+    width:700px; 
+    height:500px;
+    margin-left: 440px;
+  }
+/* Stopka */
+  footer {
+    background: linear-gradient(#53b38e, #418b6f);
+    padding: 10px;
+    text-align: center;
+    color: #d6f8eb;
+    font-size: 18px;
+  }
+  
+/* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
