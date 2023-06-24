@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="glowny">
+        <div id="test"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lp.</th>
+                    <th>Imię</th>
+                    <th>Nazwisko</th>
+                    <th>Email</th>
+                    <th>Wiek</th>
+                    <th>Data urodzenia</th>
+                    <th>Płeć</th>
+                    <th>Grupa</th>
+                </tr>
+            </thead>
+            <tbody id="etbody">
+
+            </tbody>
+        </table>
+        <p>
+            Imię: <input type="text" name="imie" id="imie"><br>
+            Nazwisko: <input type="text" name="nazwisko" id="nazwisko"><br>
+            Email: <input type="email" name="email" id="email"><br>
+            Wiek: <input type="number" name="wiek" id="wiek"><br>
+            Data urodzenia: <input type="date" name="data" id="data"><br>
+            Płeć:
+            Kobieta: <input type="radio" name="plec" id="kobieta" value="kobieta">
+            Mężczyzna: <input type="radio" name="plec" id="mezczyzna" value="mezczyzna"><br>
+            Grupa:
+            <select name="grupa" id="grupa">
+                <option value="rodzina">Rodzina</option>
+                <option value="przyjaciele">Przyjaciele</option>
+                <option value="praca">Praca</option>
+                <option value="znajomi">Znajomi</option>
+            </select><br>
+                <div class="tooltip"><button id="dodaj">Dodaj</button>
+                    <span class="tooltiptext">Dodaje kontakt.</span>
+                </div>
+        </p>
+        <img src="zaba.jpg" id="zaba">
+    </div>
+</body>
+<script src="skrypt.js"></script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waluty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glowny">
+    <div>
+        <a href="filmy.html">Filmy</a>
+        <a href="technologie.html">Technologie programistyczne</a>
+        <a href="waluty.html" class="wybrany">Przelicznik walut</a>
+        <h4>Przelicznik walut</h4>
+    </div>
+    <p>
+        Kwota(pln): <input type="number" name="kwotapln" id="kwotapln">
+        <select name="waluta" id="waluta">
+            <option value="euro">Euro</option>
+            <option value="dolar">Dolar</option>
+        </select>
+        <button id="przelicz">Przelicz</button>
+    </p>
+    <p id="wynik"></p>
+    </div>
+    <script src="skryptWaluty.js"></script>
+</body>
+</html>

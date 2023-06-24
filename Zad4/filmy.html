@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filmy</title>
+</head>
+<body>
+    <div class="glowny">
+    <div>
+        <a href="filmy.html" class="wybrany">Filmy</a>
+        <a href="technologie.html">Technologie programistyczne</a>
+        <a href="waluty.html">Przelicznik walut</a>
+    </div>
+    <table>
+        <thead>
+            <tr><th>Lp.</th><th>Tytuł</th><th>Reżyser</th><th>Rok produkcji</th></tr>
+            <h4 id="test">FILMY</h4>
+        </thead>
+        <tbody id="tb">
+            <tr><td>1.</td><td>H2o Wystarczy Kropla</td><td>Colin Budds Jeffrey Walker</td><td>2006</td></tr>
+            <tr><td>2.</td><td>Shrek</td><td>Vicky Jenson, Andrew Adamson</td><td>2001</td></tr>
+            <tr><td>3.</td><td>Shrek 2</td><td>Andrew Adamson, Conrad Vernon, Kelly Asbury</td><td>2004</td></tr>
+            <tr><td>4.</td><td>Shrek 3</td><td>Chris Miller</td><td>2007</td></tr>
+            <tr><td>5.</td><td>Shrek Forever</td><td>Mike Mitchell</td><td>2010</td></tr>
+        </tbody>
+    </table>
+        <p>
+            Tytuł: <input type="text" name="tytul" id="tytul"><br>
+            Reżyser: <input type="text" name="rezyser" id="rezyser"><br>
+            Rok produkcji: <input type="number" name="rok" id="rok"><br>
+            <button id="przycisk" onclick="dodaj()">Dodaj film</button>
+        </p>
+    </div>
+    <script src="skryptFilmy.js"></script>
+</body>
+</html>
