@@ -10,64 +10,82 @@
 </head>
 
 <body>
-    <div>
+    <div id="powitanie">
         <h2 id="naglowek">Witaj na stronie!</h2>
     </div>
-    <div>
-        <div id="potrawydiv">
-            <p>Potrawy wielkanocne:
-            <ol>
-                <li>Żurek</li>
-                <li>Jajka faszerowane</li>
-                <li>Babka wielkanocna</li>
-            </ol>
+    <div class="divpisanki">
+        <img src="pisanka1.png" class="pisanki">
+        <div class="glowne">
+            <div id="potrawydiv">
+                <p>Potrawy wielkanocne:
+                <ol>
+                    <li>Żurek</li>
+                    <li>Jajka faszerowane</li>
+                    <li>Babka wielkanocna</li>
+                </ol>
+                </p>
+            </div>
+            <button id="pokazukryj">Pokaż/Ukryj</button>
+        </div>
+    </div>
+    <div class="divpisanki">
+        <div class="glowne">
+            <p class="paragrafy">Tekst 1.</p>
+            <p class="paragrafy">Tekst 2.</p>
+            <p class="paragrafy">Tekst 3.</p>
+            <select name="kolory" id="kolory">
+                <option value="yellow">Żółty</option>
+                <option value="green">Zielony</option>
+                <option value="orange">Pomarańczowy</option>
+                <option value="red">Czerwony</option>
+                <option value="white">Biały</option>
+            </select>
+            <button id="czcionka">Kolor czcionki</button>
+            <button id="tlo">Kolor tła</button>
+        </div>
+        <img src="pisanka1.png" class="pisanki">
+    </div>
+    <div class="divpisanki">
+        <img src="pisanka1.png" class="pisanki">
+        <div class="glowne">
+            <p class="wielkanoc" id="zyczenia">
+                Na Wielkanoc wiele radości <br>
+                od zająca samych nowości. <br>
+                Niech to będzie czas uroczy <br>
+                Życzę miłej Wielkanocy!
             </p>
-        </div>
-        <button id="pokazukryj">Pokaż/Ukryj</button>
-    </div>
-    <div>
-        <p class="paragrafy">Tekst 1.</p>
-        <p class="paragrafy">Tekst 2.</p>
-        <p class="paragrafy">Tekst 3.</p>
-        <select name="kolory" id="kolory">
-            <option value="yellow">Żółty</option>
-            <option value="green">Zielony</option>
-            <option value="orange">Pomarańczowy</option>
-            <option value="red">Czerwony</option>
-            <option value="white">Biały</option>
-        </select>
-        <button id="czcionka">Kolor czcionki</button>
-        <button id="tlo">Kolor tła</button>
-    </div>
-    <div>
-        <p class="wielkanoc" id="zyczenia">
-            Na Wielkanoc wiele radości <br>
-            od zająca samych nowości. <br>
-            Niech to będzie czas uroczy <br>
-            Życzę miłej Wielkanocy!
-        </p>
-        <button id="button_wielkanoc">Wielkanoc</button>
-        <button id="button_wigilia">Boże Narodzenie</button>
-    </div>
-    <div>
-        <p id="paragraf_tekst"></p>
-        <input type="text" name="tekst" id="tekst">
-    </div>
-    <div>
-        <img src="krolik1.jpg" id="duzy">
-        <div class="male">
-            <img src="krolik1.jpg">
-            <img src="krolik2.jpeg">
-            <img src="krolik3.jpeg">
+            <button id="button_wielkanoc">Wielkanoc</button>
+            <button id="button_wigilia">Boże Narodzenie</button>
         </div>
     </div>
-    <div>
-        Zrobić przed świętami:
-        <ul id="lista">
+    <div class="divpisanki">
+        <div class="glowne">
+            <p id="paragraf_tekst"></p>
+            <input type="text" name="tekst" id="tekst">
+        </div>
+        <img src="pisanka1.png" class="pisanki">
+    </div>
+    <div class="divpisanki">
+        <img src="pisanka1.png" class="pisanki">
+        <div class="galeria">
+            <img src="krolik1.jpg" id="duzy">
+            <div class="male">
+                <img src="krolik1.jpg">
+                <img src="krolik2.jpeg">
+                <img src="krolik3.jpeg">
+            </div>
+        </div>
+    </div>
+    <div class="divpisanki">
+        <div class="glowne">
+            Zrobić przed świętami:
+            <ul id="lista">
 
-        </ul>
-        <input type="text" name="lista_zrobic" id="lista_zrobic">
-        <button id="dodaj_zrobic">Dodaj</button>
+            </ul>
+            <input type="text" name="lista_zrobic" id="lista_zrobic">
+            <button id="dodaj_zrobic">Dodaj</button>
+        </div>
+        <img src="pisanka1.png" class="pisanki">
     </div>
     <script src="script.js"></script>
 </body>

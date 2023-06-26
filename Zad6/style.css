@@ -1,12 +1,68 @@
+/*tragiczne to jest XD*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(#f5f842, #0a9205);
+    font-family: cursive;
+}
+.glowne,.galeria{
+    margin: 10px;
+    background-color: white;
+    padding: 50px;
+    width: 550px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    border: black solid 3px;
+    box-shadow: black 3px 3px 7px;
+    justify-content: center;
+}
+.galeria{
+    height: 600px;
+}
+#powitanie{
+    background: none;
+}
 .wielkanoc{
-    color: green;
+    background: url(krol.gif);
+    background-size: 110px;
 }
 .wigilia{
-    color: red;
+    background: url(snieg.gif);
 }
 .male img{
     height: 100px;
+    margin: 0px;
+    border: black solid 1px;
+}
+.male{
+    border: black solid 1px;
+    box-shadow: black 0.5px 0.5px 5px;
+    padding: 0px;
+    display: flex;
 }
 #duzy{
-    height: 500px;
+    height: 450px;
+    margin: 10px;
+    border: black solid 3px;
+    box-shadow: black 0.5px 0.5px 5px;
+}
+.pisanki{
+    height: 150px;
+}
+.divpisanki{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+button{
+    margin: 5px;
+    font-family: cursive;
+    font-weight:bold;
+    box-shadow: black 0.5px 0.5px 1px;
+    background-color: #1bb615;
+    padding: 5px;
 }

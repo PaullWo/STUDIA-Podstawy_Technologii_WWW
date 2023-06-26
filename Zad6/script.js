@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //alert("Strona załadowana!");
-    $("#naglowek").delay(3000).slideUp();
+    $("#powitanie").delay(3000).slideUp();
     //pokaz/ukryj
     $("#pokazukryj").click(function(){
         $("#potrawydiv").toggle();
